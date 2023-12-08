@@ -1,0 +1,35 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    background-color: black;
+}
+main{
+    background: linear-gradient(to bottom,#0da0da, #dbbc08, #87CEEB);
+    width: 90%;
+    margin: 3em auto;
+    padding-top: 2em;
+    border-radius: 2em;
+    height: 80vh;
+}
+.location{
+    width: 90%;
+    /* display: flex; */
+    margin:auto;
+}
+#locator{
+    width: 80%;
+    padding: .7em;
+    border: none;
+    border-radius: 2em;
+    
+    /* display: flex; */
+}
+/* .location button{
+    width: 15%;
+    border: none;
+    border-radius: 2em;
+    padding: .5em;
+} */
+/* .location button img{
+    width: 30%;
+} */
