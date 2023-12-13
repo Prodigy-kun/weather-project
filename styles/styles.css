@@ -6,11 +6,14 @@ body{
 }
 main{
     background: linear-gradient(to bottom,#0da0da, #dbbc08, #87CEEB);
+    /* background-color: black; */
     width: 90%;
     margin: 3em auto;
     padding-top: 2em;
     border-radius: 2em;
-    height: 80vh;
+    /* height: 90vh; */
+    max-width: 50em;
+    overflow: hidden;
 }
 .location{
     width: 90%;
@@ -25,12 +28,71 @@ main{
     
     /* display: flex; */
 }
-/* .location button{
-    width: 15%;
-    border: none;
+
+.weatherdata{
+    display: flex;
+    /* grid-template-columns: 1fr 1fr; */
+    width: 60%;
+    /* max-width: 30em; */
+    margin: 0 auto;
+    gap: .5em;
+}
+.weatherdata div{
+    background-color: black;
+    padding: 1em;
+    /* height: 10em; */
+    font-size: .8em;
+    text-align: center;
     border-radius: 2em;
-    padding: .5em;
-} */
-/* .location button img{
-    width: 30%;
-} */
+    /* width: 5em; */
+}
+.weatherdata img{
+    width: 50%;
+}
+
+
+
+.about{
+    text-align: center;
+    width: 50%;
+    margin: 1em auto;
+}
+.about img{
+    width: 25%;
+}
+.about h1{
+    font-size: 3em;
+}
+.forecast-container{
+    display: flex;
+    gap: 1em;
+    background-color:transparent;
+    /* overflow: hidden; */
+    overflow-x: scroll;
+    width: 98%;
+    margin: 2em auto;
+    padding: .9em;
+    border-radius: 2em;
+    /* flex-wrap: wrap; */
+    scroll-behavior:smooth;
+}
+
+.forecast-container::-webkit-scrollbar {
+    width: 0;
+}
+
+/* Optional: style scrollbar track, thumb, etc. for Webkit browsers */
+.forecast-container::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.forecast-container::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+@media only screen and (max-width: 35em){
+    .weatherdata{
+        font-size: .7em;
+
+    }
+}
