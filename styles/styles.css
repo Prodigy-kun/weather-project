@@ -1,3 +1,7 @@
+:root{
+    --background-darkMode:#000;
+    --background-lightMode:linear-gradient(to bottom,#0da0da, #dbbc08, #87CEEB);
+}
 body{
     box-sizing: border-box;
     margin: 0;
@@ -15,8 +19,26 @@ main{
     max-width: 50em;
     overflow: hidden;
 }
+.darkmode{
+    background: var(--background-darkMode);
+    transition: background 1s ease-in;
+}
+.darkModeBtn{
+    background-color: transparent;
+    border: none;
+    justify-self: end;
+    /* float: left; */
+}
+.showindark{
+    background-color: white;
+    border-radius: 50%;
+}
 .location{
-    width: 90%;
+    /* display: inline-block; */
+    display: grid;
+    grid-template-columns: 90% 10%;
+    width: 80%;
+    column-gap: auto;
     /* display: flex; */
     margin:auto;
 }
@@ -94,5 +116,12 @@ main{
     .weatherdata{
         font-size: .7em;
 
+    }
+    .location{
+        width: 85%;
+    }
+    #locator{
+        width: 60%;
+        margin: auto;
     }
 }
